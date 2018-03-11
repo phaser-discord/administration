@@ -1,0 +1,19 @@
+module.exports = {
+  discord: {
+    token: '',
+
+    watchChannel: '',
+    watchEmoji: '',
+  },
+
+  github: {
+    authUser: '',
+    authPAT: '',
+
+    // must be a repo that the above credentials grant access to
+    destinationRepo: '',
+    destinationRepoOwner: '',
+
+    issueLabels: [],
+  }
+}
