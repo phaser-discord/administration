@@ -1,0 +1,12 @@
+{
+  "name": "feature-watcher",
+  "version": "1.0.0",
+  "description": "Watches for emoji reactions and hooks to github",
+  "main": "index.js",
+  "repository": "https://github.com/phaser-discord/administration",
+  "license": "MIT",
+  "dependencies": {
+    "@octokit/rest": "^15.1.9",
+    "discord.js": "^11.3.2"
+  }
+}
