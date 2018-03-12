@@ -78,7 +78,7 @@ async function createIssue(content, shortName, longName, date) {
     const guildActor = guild.member(actor)
     if (!guildActor) { return }
 
-    const adminActor = guildActor.hasPermission(Discord.Permissions.MANAGE_MESSAGES)
+    const adminActor = guildActor.hasPermission(Discord.Permissions.FLAGS.MANAGE_MESSAGES)
     if (!adminActor) { return }
 
     const count = reaction.count
