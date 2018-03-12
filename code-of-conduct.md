@@ -1,4 +1,8 @@
-# Code of Conduct Short Form
+# tl;dr
+
+Be kind, build a nice place.
+
+# Longer Code of Conduct
 
 Last Updated: 2018-03-10; v1.0
 
@@ -39,7 +43,7 @@ confidential unless you explicitly grant us permission otherwise. We will
 keep you informed about the status of your report and any action taken as a
 result.
 
-# Code of Conduct Long Form
+# Longest Code of Conduct
 
 ## Pledge
 
