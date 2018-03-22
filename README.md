@@ -20,6 +20,7 @@ tl;dr: Be kind, build a nice place.
 If you have a question about Phaser, feel free to mention @Ping for help.
 
 **FAQ**
+
 Got a question? Maybe we've already answered it!
 
 https://github.com/phaser-discord/community/blob/master/FAQ.md
@@ -29,7 +30,7 @@ https://github.com/phaser-discord/community/blob/master/FAQ.md
 We'll soon make a list of some good beginner tutorials for Phaser.
 In the mean time, this official tutorial is a good start (both v3 and v2/CE)
 
-http://phaser.io/tutorials/making-your-first-phaser-game
+https://phaser.io/tutorials/making-your-first-phaser-game
 
 Wondering if you should use Phaser 3 or Phaser 2/CE? @WiLD#4832 has a nice video on that:
 
