@@ -38,9 +38,13 @@ https://www.youtube.com/watch?v=St_tPsG0pX0
 
 In short, v3 has the fanciest new features, but v2/CE has better docs, tutorials, and community content.
 
-**Important people**
 
+**Important people (sorted by role)**
 - photonstorm (aka Rich) , the guy behind Phaser. Comes online here from time to time
-- @16patsle#7801 (that's me), moderator and admin
+
+- @16patsle#7801, moderator and admin
 - @jdotr#9225, moderator and admin
-- @Arcan#8543, moderator and helper person
+- @Arcan#8543, moderator and helper
+
+- @Dan#7767, helper
+- @Str1ngS#3876, helper
