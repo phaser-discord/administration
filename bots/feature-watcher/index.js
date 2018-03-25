@@ -109,6 +109,31 @@ async function createIssue(content, shortName, longName, date) {
     }
   })
 
+  discordClient.on('message', async (processMessage(discordClient)))
+
   // Login with the Discord App token
   discordClient.login(cfg.discord.token);
 })()
+
+function processMessage(client) {
+  return (message) => {
+    const { cleanContent, member } = message
+    // no guild membor found
+    if (!member) { return }
+
+    const isOncall = cleanContent === '!oncall'
+    const isOffcall = cleanContent === '!offcall'
+    // not a command
+    if (!isOffcall && !isOncall) { return }
+
+    // TODO: replace ID usage with cfg.discord.helperRole
+
+    if (isOncall) {
+      member.addRole('420536763702837250', 'self-requested')
+    }
+
+    if (isOffcall) {
+      member.removeRole('420536763702837250', 'self-requested')
+    }
+  }
+}

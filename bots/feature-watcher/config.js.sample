@@ -4,6 +4,8 @@ module.exports = {
 
     watchChannel: '',
     watchEmoji: '',
+
+    helperRole: '',
   },
 
   github: {
