@@ -7,6 +7,19 @@ const octokit = require('@octokit/rest')({
   }
 });
 
+// Set up handlers for process events
+process.on('unhandledRejection', function (err, p) {
+  console.error('Unhandled Rejection')
+  console.error(err)
+  console.error(p)
+})
+
+process.on('warning', (warning) => {
+  console.warn(warning.name);    // Print the warning name
+  console.warn(warning.message); // Print the warning message
+  console.warn(warning.stack);   // Print the stack trace
+});
+
 // bot config
 const cfg = require('./config.js');
 
@@ -60,19 +73,12 @@ async function createIssue(content, shortName, longName, date) {
   discordClient.on('ready', () => {
     console.log('Ready!');
   });
-  //FIX ISSUE #23
-discordClient.on("error", (err) => {
-	console.log("Error: " + err)
-});
-process.on('unhandledRejection', function (err,p) {
-    console.log(err,p)
-})
-process.on('warning', (warning) => {
-    console.warn(warning.name);    // Print the warning name
-    console.warn(warning.message); // Print the warning message
-    console.warn(warning.stack);   // Print the stack trace
-  //
-});
+
+  discordClient.on('error', (err) => {
+    console.log('Received discordClient error')
+    console.log(err)
+  });
+
   discordClient.on('messageReactionAdd', async (reaction, actor) => {
     const message = reaction.message
     if (!message) { return }
